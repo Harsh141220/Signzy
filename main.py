@@ -50,11 +50,11 @@ cnts = sorted(cnts, key=cv2.contourArea, reverse=True)[:5]
 for c in cnts:
     peri = cv2.arcLength(c, True)
     approx = cv2.approxPolyDP(c, 0.01 * peri, True)  # 0.02
-    screenCnt = approx
+    screen = approx
     if len(approx) == 4:
-        screenCnt = approx
+        screen = approx
         break
-cv2.drawContours(image, [screenCnt], -1, (0, 255, 0), 2)
+cv2.drawContours(image, [screen], -1, (0, 255, 0), 2)
 cv2.imshow("Input Image", orig)
 cv2.imshow("Output Image", image)
 cv2.waitKey(0)

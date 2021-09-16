@@ -8,8 +8,8 @@ You will get 2 outputs: 1 of input image and other of boundary on the image
 
 Please do install:
 
-imutils	0.5.4	0.5.4
-opencv-python	4.5.3.56	4.5.3.56
+imutils	0.5.4
+opencv-python	4.5.3.56.  pip install opencv-python	
 argparse
 numpy	1.21.2	
 

@@ -54,7 +54,7 @@ for c in cnts:
     if len(approx) == 4:
         screen = approx
         break
-cv2.drawContours(image, [screen], -1, (0, 255, 0), 2)
+cv2.drawContours(image, [screen], -1, (0, 255, 255), 2)
 cv2.imshow("Input Image", orig)
 cv2.imshow("Output Image", image)
 cv2.waitKey(0)
